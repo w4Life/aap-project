@@ -13,15 +13,3 @@
       ansible.builtin.service:
         name: nginx
         state: started
-
-    - name: Sending an e-mail using Gmail SMTP servers
-      community.general.mail:
-        host: smtp.gmail.com
-        port: 587
-        username: kmhai2803@gmail.com
-        password: wubt ujtq eltv hevz
-        from: hai.km@amigo.vn
-        to:
-          - Anh Mai <anh.mh@amigo.vn>
-        subject: Ansible-report
-        body: The status of nginx is {{ ansible_facts['services']['nginx.service']['state'] }}
