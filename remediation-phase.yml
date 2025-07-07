@@ -7,4 +7,17 @@
         remote_src: true
         src: /root/haikm/Flappy-Bird
         dest: /usr/share/nginx/html/
+      register: status
+
+    - name: Send email to stake-holder
+      community.general.mail:
+        host: smtp.gmail.com
+        port: 587
+        username: kmhai2803@gmail.com
+        password: wubt ujtq eltv hevz
+        to:
+          - Anh Mai <anh.mh@amigo.vn>
+        subject: Ansible-report
+        body: The status of remediation phase is {{ status }}
+        
 
