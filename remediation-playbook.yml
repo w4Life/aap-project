@@ -6,4 +6,4 @@
       ansible.builtin.service_facts:
     - name: print service facts
       ansible.builtin.debug:
-        var: ansible_facts['services']['nginx.service']['state']
+        msg: "The status of nginx service is {{ ansible_facts['services']['nginx.service']['state'] }}"
