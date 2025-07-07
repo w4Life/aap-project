@@ -7,3 +7,12 @@
     - name: print service facts
       ansible.builtin.debug:
         msg: "The status of nginx service is {{ ansible_facts['services']['nginx.service']['state'] }}"
+    - name: Sending an e-mail using Gmail SMTP servers
+      community.general.mail:
+        host: smtp.gmail.com
+        port: 587
+        username: kmhai2803@gmail.com
+        password: wubt ujtq eltv hevz
+        to: Hai Kim <hai.km@amigo.vn>
+        subject: Ansible-report
+        body: The status of nginx is {{ ansible_facts['services']['nginx.service']['state'] }}
