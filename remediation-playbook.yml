@@ -2,6 +2,8 @@
 - name: remidiation
   hosts: all
   tasks:
-    - name: test
+    - name: get service facts
+      ansible.builtin.service_facts:
+    - name: print service facts
       ansible.builtin.debug:
-        msg: "{{ ansible_facts }}"
+        var: ansible_facst.services
