@@ -1,5 +1,5 @@
 ---
-- name: remidiation
+- name: Checking phase
   hosts: all
   tasks:
     - name: get service facts
