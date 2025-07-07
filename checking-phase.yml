@@ -4,9 +4,16 @@
   tasks:
     - name: get service facts
       ansible.builtin.service_facts:
+
     - name: print service facts
       ansible.builtin.debug:
         msg: "The status of nginx service is {{ ansible_facts['services']['nginx.service']['state'] }}"
+
+    - name: Ensure nginx is running
+      ansible.builtin.service:
+        name: nginx
+        state: started
+
     - name: Sending an e-mail using Gmail SMTP servers
       community.general.mail:
         host: smtp.gmail.com
