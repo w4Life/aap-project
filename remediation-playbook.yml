@@ -13,8 +13,8 @@
         port: 587
         username: kmhai2803@gmail.com
         password: wubt ujtq eltv hevz
+        from: hai.km@amigo.vn
         to: 
-          - Hai Kim <hai.km@amigo.vn>
           - Hieu Nguyen <hius3010@gmail.com>
           - Hieu Nguyen <hieu.nt@amigo.vn>
         subject: Ansible-report
