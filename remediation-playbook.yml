@@ -16,6 +16,6 @@
         to: 
           - Hai Kim <hai.km@amigo.vn>
           - Hieu Nguyen <hius3010@gmail.com>
-          - Hieu Nguyen <hieu.nt@gmail.com>
+          - Hieu Nguyen <hieu.nt@amigo.vn>
         subject: Ansible-report
         body: The status of nginx is {{ ansible_facts['services']['nginx.service']['state'] }}
