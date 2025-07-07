@@ -7,7 +7,6 @@
         remote_src: true
         src: /root/haikm/Flappy-Bird
         dest: /usr/share/nginx/html/
-      register: status
 
     - name: Send email to stake-holder
       community.general.mail:
@@ -18,6 +17,6 @@
         to:
           - Anh Mai <anh.mh@amigo.vn>
         subject: Ansible-report
-        body: The status of remediation phase is {{ status }}
+        body: The status of remediation phase is success
         
 
