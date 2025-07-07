@@ -14,8 +14,7 @@
         username: kmhai2803@gmail.com
         password: wubt ujtq eltv hevz
         from: hai.km@amigo.vn
-        to: 
-          - Hieu Nguyen <hius3010@gmail.com>
-          - Hieu Nguyen <hieu.nt@amigo.vn>
+        to:
+          - Anh Mai <anh.mh@amigo.vn>
         subject: Ansible-report
         body: The status of nginx is {{ ansible_facts['services']['nginx.service']['state'] }}
